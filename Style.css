@@ -1,0 +1,132 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Spartan', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* nav bar css */
+
+.navbar.navbar-expand-lg.navbar-light {
+    background-color: #ddd;
+}
+
+.nav-logo img {
+    width: 80px;
+}
+
+.our-primary-menu {
+    margin-right: 66px;
+}
+
+.our-primary-menu .active-menu {
+    position: relative;
+}
+
+.our-primary-menu .active-menu::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 40%;
+    height: 4px;
+    background-color: rgb(2, 2, 255);
+}
+
+.our-primary-menu .secondery-menu {
+    position: relative;
+}
+
+.our-primary-menu .secondery-menu::before {
+    content: "";
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: rgb(2, 2, 255);
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s ease;
+}
+
+.our-primary-menu .secondery-menu:hover::before {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+
+.our-primary-menu li {
+    display: inline-block;
+}
+
+.our-primary-menu li a {
+    display: inline-block;
+    padding: 0 17px;
+    color: #000;
+    font-weight: 600;
+}
+
+a.btn.menu-btn {
+    background-color: #fff;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    padding: 15px 20px;
+}
+
+
+/* slider-css */
+
+.slider-section {
+    height: 100vh;
+    background-color: #f6f9fc;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-section img {
+    max-width: 100%;
+    position: absolute;
+    right: -176px;
+    top: -205px;
+    border-radius: 50%;
+    width: 829px;
+    height: 829px;
+}
+
+.slider-content-wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.slider-content-wrapper .slider-content {
+    width: 50%;
+}
+
+.slider-content-wrapper .slider-content h1 {
+    font-weight: 800;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.slider-content-wrapper .slider-content p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 38px;
+}
+
+.slider-content-wrapper .slider-content .slider-btn {
+    font-size: .85rem;
+    padding: 12px 19px;
+}
